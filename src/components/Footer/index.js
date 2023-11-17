@@ -81,7 +81,7 @@ function showFooterMid()
     const btmLogo = document.createElement('figure')
     const btmLogoImage = document.createElement('img')
     btmLogoImage.setAttribute('id','btm__logo--img')
-    btmLogoImage.src = './assets/uboric.png'
+    btmLogoImage.src = 'https://i.ibb.co/9g7nMKv/uboric.png'
 
     btmLogo.append(btmLogoImage)
     

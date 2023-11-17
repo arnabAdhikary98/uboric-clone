@@ -53,13 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Function to update the carousel position
     function updateCarousel() {
-        const containerWidth = carouselContainer?.offsetWidth;
-        const itemWidthPercentage = 100 / totalItems;
-        const itemWidth = containerWidth * (itemWidthPercentage / 100);
-    
+        const itemWidth = items[0].offsetWidth; // Get the width of the first item
         const newPosition = -currentIndex * itemWidth;
         carouselList.style.transform = `translateX(${newPosition}px)`;
-    
+
         // Show the shop-now-box for the current item
         items.forEach((item, index) => {
             const shopNowBox = item.querySelector('.shop-now-box');

@@ -55,7 +55,7 @@ function showHeaderLeft()
     const logo = document.createElement('a')
     const logoImage = document.createElement('img')
     logoImage.setAttribute('id','logo_image--header')
-    logoImage.src = './assets/logo.png'
+    logoImage.src = 'https://i.ibb.co/2ZzrpLC/logo.png'
     logoImage.innerHTML = 'https://www.uboric.in/'
 
     logo.append(logoImage)
@@ -115,14 +115,14 @@ function showHeaderRight()
     let searchLogo = document.createElement('a')
     let searchLogoImage = document.createElement('img')
     searchLogoImage.setAttribute('id','search__logo-image')
-    searchLogoImage.src = './assets/search.png'
+    searchLogoImage.src = 'https://i.ibb.co/DC1HC7n/search.png'
 
     searchLogo.append(searchLogoImage)
 
     let profileLogo = document.createElement('a')
     let profileLogoImage = document.createElement('img')
     profileLogoImage.setAttribute('id','profile__logo-image')
-    profileLogoImage.src = './assets/user.png'
+    profileLogoImage.src = 'https://i.ibb.co/9rWXDzH/user.png'
     profileLogo.href = 'src/pages/login/login.html'
 
     profileLogo.append(profileLogoImage)
@@ -130,7 +130,7 @@ function showHeaderRight()
     let wishListLogo = document.createElement('a')
     let wishListLogoImage = document.createElement('img')
     wishListLogoImage.setAttribute('id','wishlist__logo-image')
-    wishListLogoImage.src = './assets/wish-list.png'
+    wishListLogoImage.src = 'https://i.ibb.co/qd8vy55/wish-list.png'
     wishListLogo.href = 'https://www.uboric.in/wishlist/'
 
     wishListLogo.append(wishListLogoImage)
@@ -138,7 +138,7 @@ function showHeaderRight()
     let cartLogo = document.createElement('a')
     let cartLogoImage = document.createElement('img')
     cartLogoImage.setAttribute('id','cart__logo-image')
-    cartLogoImage.src = './assets/bag.png'
+    cartLogoImage.src = 'https://i.ibb.co/6gCTQqG/bag.png'
 
     cartLogo.append(cartLogoImage)
 
