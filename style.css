@@ -1,0 +1,605 @@
+#carousel-container {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+#carousel-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    height: 50rem;
+    width: 100vw;
+}
+
+#prevBtn,#nextBtn {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.carousel-item>img{
+    height: 100%;
+    width: 100vw;
+}
+
+#prevBtn {
+    left: 1rem;
+    top: 70%;
+    transform: translateY(-40%);
+    height: 3rem;
+    width: 6rem;
+    color: rgb(66, 65, 65);
+    border: 3px solid white;
+    background-color: rgba(145, 139, 139, 0.741);
+}
+
+#nextBtn {
+    right: 1rem;
+    top: 70%;
+    transform: translateY(-40%);
+    height: 3rem;
+    width: 6rem;
+    color: rgb(66, 65, 65);
+    border: 3px solid white;
+    background-color: rgba(145, 139, 139, 0.741);
+}
+
+.shop-now-box {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.shop-now-link {
+    color: white;
+    text-decoration: none;
+}
+
+#parentDiv1{
+    /* border: 5px solid yellow; */
+    height: 23vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+#parentDiv1>div{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    justify-content: space-evenly;
+}
+#parentDiv1--child1-img01{
+    height: 20rem;
+    width: 30rem;
+}
+#parentDiv1--child1-img02{
+    height: 20rem;
+    width: 30rem;
+}
+#parentDiv1--child1-img03{
+    height: 20rem;
+    width: 30rem;
+}
+
+#parentDiv2{
+    height: 12vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0%;
+}
+#parentDiv2--child01{
+    height: 40%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#parentDiv2--child01>h3{
+    font-weight: 600;
+}
+#parentDiv2--child02{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin: 1%;
+}
+#parentDiv2--child02>a>p{
+    color: black;
+    font-size: 110%;
+    text-align: center;
+    font-weight: 550;
+}
+#parentDiv2--child03{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#parentDiv2--child03>div{
+    height: 20%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    margin-bottom: 3%;
+
+}
+#parentDiv2--child03>div>a>h4{
+    color: black;
+    font-size: 120%;
+    font-weight: 600;
+}
+
+#parentDiv3{
+    /* border: 2px solid red; */
+    height: 30vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#parentDiv3--child01{
+    /* border: 3px dotted black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parentDiv3--child02{
+    /* border: 3px dotted black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parentDiv3--child01-subChild01{
+    /* border: 3px solid red; */
+    height: 80%;
+    width: 80%;
+}
+
+#parentDiv3--child01-subChild01>a>img{
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+#parentDiv3--child01-subChild02{
+    /* border: 1px solid blue; */
+    height: 12%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#parentDiv3--child01-subChild02>p{
+    color: black;
+    font-size: 1.3rem;
+}
+
+#parentDiv3--child01-subChild03{
+    /* border: 1px solid blue; */
+    height: 8%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#parentDiv3--child01-subChild03>a>p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+#parentDiv3--child02-subChild01{
+    /* border: 3px solid red; */
+    height: 80%;
+    width: 80%;
+}
+#parentDiv3--child02-subChild01>a>img{
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+#parentDiv3--child02-subChild02>p{
+    color: black;
+    font-size: 1.3rem;
+}
+
+#parentDiv3--child02-subChild02{
+    /* border: 1px solid blue; */
+    height: 12%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#parentDiv3--child02-subChild03{
+    /* border: 1px solid blue; */
+    height: 8%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#parentDiv3--child02-subChild03>a>p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+#parentDiv4{
+    /* border: 2px solid red; */
+    height: 30vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#parentDiv4--child01{
+    /* border: 3px dotted black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parentDiv4--child02{
+    /* border: 3px dotted black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parentDiv4--child01-subChild01{
+    /* border: 3px solid red; */
+    height: 80%;
+    width: 80%;
+}
+
+#parentDiv4--child01-subChild01>a>img{
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+#parentDiv4--child01-subChild02{
+    /* border: 1px solid blue; */
+    height: 12%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#parentDiv4--child01-subChild02>p{
+    color: black;
+    font-size: 1.3rem;
+}
+
+#parentDiv4--child01-subChild03{
+    /* border: 1px solid blue; */
+    height: 8%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#parentDiv4--child01-subChild03>a>p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+#parentDiv4--child02-subChild01{
+    /* border: 3px solid red; */
+    height: 80%;
+    width: 80%;
+}
+#parentDiv4--child02-subChild01>a>img{
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+}
+
+#parentDiv4--child02-subChild02>p{
+    color: black;
+    font-size: 1.3rem;
+}
+
+#parentDiv4--child02-subChild02{
+    /* border: 1px solid blue; */
+    height: 12%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+#parentDiv4--child02-subChild03{
+    /* border: 1px solid blue; */
+    height: 8%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#parentDiv4--child02-subChild03>a>p{
+    color: black;
+    font-size: 1.1rem;
+}
+
+#parentDiv5{
+    height: 4vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: 2% 0%;
+}
+
+#parentDiv5>h3{
+    font-size: 2rem;
+    font-weight: 450;
+}
+
+#parentDiv6{
+    height: 30vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+#parentDiv6 .parentDiv6-child{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    border-style: none;
+    margin: 2% 0%;
+    padding: 2%;
+}
+
+#parentDiv6 .parentDiv6-child > div{
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.parentDiv6-child{
+    font-weight: 500;
+    font-size: 110%;
+}
+#parentDiv6--child01--subChild03>p{
+    font-size: 110%;
+    color: brown;
+}
+#parentDiv6--child02--subChild03>p{
+    font-size: 110%;
+    color: brown;
+}
+#parentDiv6--child03--subChild03>p{
+    font-size: 110%;
+    color: brown;
+}
+
+.marked-text {
+    position: relative;
+    display: inline-block;
+    color: rgb(161, 154, 154);
+  }
+
+  .marked-text::after {
+    content: "";
+    color: rgb(190, 182, 182);
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(152, 113, 113);
+
+  }
+
+  .pop-image{
+    /* position: relative; */
+    width: 500px;
+    transition: transform 0.3s ease-in-out; /* transition for the transform property */
+  }
+
+  /*hover effect to pop the image */
+  .pop-image:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+  }
+
+  #parentDiv7{
+    height: 4vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    margin: 2% 0%;
+}
+
+  #parentDiv7>h3{
+    font-size: 2rem;
+    font-weight: 450;
+}
+
+#parentDiv8{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#parentDiv8 .parentDiv8-child{
+    height: 100%;
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    border-style: none;
+    padding: 0.5%;
+}
+
+#parentDiv8 .parentDiv8-child > div{
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.parentDiv8-child{
+    font-weight: 500;
+    font-size: 105%;
+}
+#parentDiv8--child01--subChild03>p{
+    font-size: 110%;
+    color: rgb(118, 118, 118);
+}
+#parentDiv8--child02--subChild03>p{
+    font-size: 110%;
+    color: rgb(118, 118, 118);
+}
+#parentDiv8--child03--subChild03>p{
+    font-size: 110%;
+    color: rgb(118, 118, 118);
+}
+#parentDiv8--child04--subChild03>p{
+    font-size: 110%;
+    color: rgb(118, 118, 118);
+}
+#parentDiv8--child05--subChild03>p{
+    font-size: 110%;
+    color: rgb(118, 118, 118);
+}
+#parentDiv8--child06--subChild03>p{
+    font-size: 110%;
+    color: rgb(118, 118, 118);
+}
+
+#parentDiv9{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2% 0%;
+    padding: 2% 10%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.bottom-uboric-description-text h3{
+    font-weight: 500;
+}
+
+.bottom-uboric-description-text p{
+    font-size: 120%;
+    color: #7A7A82;
+    padding: 2% 0%;
+}
+
+#parentDiv10{
+    height: 38rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+#parentDiv10>.bottom-info{
+    height: 100%;
+    width: 50%;
+    margin: 5% 2%;
+    padding: 2% 7%; 
+}
+
+#parentDiv10-child01 p{
+    color: black;
+    padding: 4% 0%;
+}
+.bottom-info>div{
+    margin: 4% 0%;
+}
+.bottom-info>.button{
+    height: 8%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}

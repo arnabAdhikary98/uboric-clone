@@ -1,0 +1,100 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.form{
+    max-width: 430px;
+    width: 100%;
+    padding: 2%;
+    border-radius: 6px;
+    background: #f2f2f0e7;
+}
+.form-content{
+    margin: 2% 0%;
+    justify-content: center;
+    align-items: center;
+}
+.login-header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+    margin: 10% 0%;
+}
+
+form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 5%;
+}
+.field input, .field button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #CACACA;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 2px;
+    padding: 5%;
+}
+
+.field button{
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 111%;
+}
+.field button:hover{
+    background-color: black;
+    color: white;
+}
+.field input{
+    margin: 1% 0%;
+    outline: none;
+}
+
+.field input:focus{
+    border-bottom-width: 2px;
+}
+
+.eye-icon{
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    padding: 6px 2px 3px 2px;
+    position: absolute;
+    font-size: 18px;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+.field button{
+    height: 90%;
+    width: 40%;
+    padding: 0 2%;
+    border: 1px solid #feadad;
+}
+.form-link{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-link span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #232836;
+}
+
+.form-link span a{
+    font-size: 113%;
+    color: rgb(70, 70, 242);
+}
+.form a{
+    text-decoration: none;
+    color: rgb(70, 70, 242);
+}
+.form a:hover{
+    text-decoration: underline;
+}

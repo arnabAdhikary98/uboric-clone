@@ -1,0 +1,84 @@
+#mainFooter{
+    background-color: black;
+    height: 35rem;
+    width: 100vw;
+}
+
+#btm__top--div{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#btm__top--sub--div-01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%; 
+}
+
+#btm__top--sub--div-01>h3{
+    font-weight: 400;
+}
+
+#btm__top--sub--div-02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 1% 0% .8%;
+}
+
+#btm_header{
+    color: white;
+    size: 60%;
+}
+
+#search__bar{
+    height: 40%;
+    width: 120%;
+    padding: 0% 4%;
+}
+#subscribe__button{
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(131, 131, 131);
+    height: 30%;
+    width: 7%;
+    margin-top: 4.82%;
+}
+
+#btm__mid--div{
+    display: flex;
+    padding: 60px 40px 60px 40px;
+    width: 100%;
+    height: 65%;
+    justify-content: space-evenly;
+
+}
+
+#btm__mid--div>div{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#btm__mid--div>div>a,h4,h5,p{
+    padding: 7% 0% 3% 0%;
+    color: white;
+
+}
+
+#btm__logo--img{
+    height: 80px;
+    width: 175px;
+}
+
+#btm__below--div{
+    height: 1%;
+    width: 100%;
+    border: 1px solid blue;
+}
